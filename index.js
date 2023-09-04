@@ -13,16 +13,29 @@ function createFirstPage() {
         <div class="btnField">
             <button id="firstButton">Начать</button>
         </div>`;
-    content.insertAdjacentHTML('beforeend', formHTML); //TODO! REMEMBER to submit changes without <form></form>
+    content.insertAdjacentHTML('beforeend', formHTML);
     const form = content.querySelector('form');
     return form
+}
+
+function getDataUser() {
+    const inpName = document.querySelector('.inputName');
+    const inpGroup = document.querySelector('.inputGroup');
+
+    const obj = {
+        inpName: inpName.value, inpGroup: inpGroup.value
+    }
+    localStorage.setItem('dataUser', JSON.stringify(obj))
 }
 
 createFirstPage();
 
 const firstButton = document.querySelector('#firstButton');
 
-firstButton.addEventListener('click', renderCards)
+firstButton.addEventListener('click', () => {
+    getDataUser()
+    renderCards()
+})
 
 function renderCards() {
 
