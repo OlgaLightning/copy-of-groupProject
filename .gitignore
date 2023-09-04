@@ -1,0 +1,7 @@
+.parcel-cache
+dist
+node_modules
+style.css.map
+package-lock.json
+style.css
+.DS_Store

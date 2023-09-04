@@ -1,0 +1,92 @@
+//стили для оболочки страницы
+body {
+    background-color: rgba(250, 219, 227, 1);
+}
+
+main {
+    width: 60%; //увеличила ширину до 60% - страницы с вопросами лучше смотрятся
+    background-color: white;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5%;
+    padding: 2%;
+    font-family: 'Jost', sans-serif;
+}
+
+//сделала класс, чтобы используя его можно было отступы сделать у всех одинаковыми
+.indent {
+    padding-bottom: 25px;
+}
+
+//стили для бегунка
+.input {
+    width: 135px;
+}
+
+.slider {
+    accent-color: rgba(238, 68, 95, 1);
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+//добавила стили для заголовков и остальных элементов
+h1 {
+    font-size: 30px;
+}
+
+.pinkText {
+    color: rgba(238, 68, 95, 1); //TODO поменять на правильный цвет
+}
+
+//добавила стили для инпутов
+.form {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.inputField {
+    border-radius: 20px;
+    width: 30%;
+    padding: 5px 10px;
+    border: none;
+    background-color: rgb(239, 235, 235);
+}
+
+.inputField:focus {
+    outline: 2px solid rgba(238, 68, 95, 1);
+}
+
+//стили для кнопок
+.btnField {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    background-color: rgba(238, 68, 95, 1);
+    border: 2px solid rgba(238, 68, 95, 1);
+    border-radius: 20px;
+    width: 25%;
+    padding: 10px;
+    color: white;
+}
+
+button:hover {
+    background-color: white;
+    color: rgba(238, 68, 95, 1);
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-content {
+    display: flex;
+    justify-content: space-between;
+}
